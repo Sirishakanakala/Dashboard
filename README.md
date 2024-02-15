@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+<img width="923" alt="image" src="https://github.com/Sirishakanakala/Dashboard/assets/110217912/21783c51-f007-49ac-9cfb-0a3aa08cb9eb">
+
+Demo Link: 
+https://dashboard-liard-two.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
