@@ -20,10 +20,10 @@ export default function Header() {
         <button className='b size-10 rounded-full bg-neutral-100 mt-2 ml-1  absolute right-48'>
           <IoMdNotificationsOutline className='size-4 m-auto  place-content:center' />
         </button>
-        <div className='size-10 mt-2 ml-1  absolute right-36'>
+        <div className='b size-10 mt-2 ml-1  absolute right-36'>
           <img className='rounded-full' src='./images/img.jpg' alt='User Profile' />
         </div>
-        <div className='ml-2 mt-1 absolute right-4'>
+        <div className='b ml-2 mt-1 absolute right-4'>
           <span className='text-m'>Sirisha Kanakala</span>
           <p style={{fontSize: '0.8rem'}}>siri1803@gmail.com</p>
         </div>

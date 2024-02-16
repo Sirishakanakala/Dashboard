@@ -91,14 +91,12 @@
   display: flex;
   justify-content: space-between;
 }
-
 .main-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   margin: 15px 0;
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -167,17 +165,11 @@
     width: 0;
     overflow: hidden;
   }
-
-  /* Show responsive sidebar icon */
-  .sidebar-responsive {
-    
-    position: absolute;
-   
-  }
   .grid-container {
-    grid-template-areas:
+  grid-template-areas:
       'header header'
       'main main'; /* Combine header and main on smaller screens */
+    height: auto;
   }
   .header-heading .p{
     font-display: none;
@@ -185,5 +177,11 @@
   }
   .header-container .b{
     display: none;
+  }
+ 
+}
+@media (min-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
