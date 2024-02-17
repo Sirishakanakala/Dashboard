@@ -25,19 +25,19 @@ const StudentsData = [
   },
   {
     name: "Nov'23",
-    DropOutStudents: -990,
+    DropOutStudents: -190,
     ActiveStudents: 4800,
    
   },
   {
     name: "Dec'23",
-    DropOutStudents: -390,
+    DropOutStudents: 0,
     ActiveStudents: 3800,
    
   },
   {
     name: "Jan'24",
-    DropOutStudents: -490,
+    DropOutStudents: -100,
     ActiveStudents: 4300,
     
   },

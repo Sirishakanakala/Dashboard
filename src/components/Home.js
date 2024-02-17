@@ -10,7 +10,7 @@ export default function Home() {
   const [selectedOption, setSelectedOption] = useState("Last 3 months");
   const [selectedFilter, setSelectedFilter] = useState("All");
   const activeStudents = RandomStudentsData.length;
-  console.log("length: " ,activeStudents);
+  // console.log("length: " ,activeStudents);
   const ActiveCoaches = 5;
   const totalFeeReceived = RandomStudentsData.reduce((total, student) => total + student.fee_received, 0);
 
@@ -106,9 +106,9 @@ export default function Home() {
       {/* chart */}
       <div className="flex flex-col lg:flex-row justify-between items-center text-black px-4 py-2 bg-gray-100">
         {/* revenue chart */}
-        <div className="lg:w-1/2 barchart">
+        <div className="lg:w-1/2 md:w-1">
           <h2 className="text-grey-400">Revenue</h2>
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" minWidth={250} height={200}>
           <BarChart 
             className="barchart"
             width={500}
@@ -128,9 +128,9 @@ export default function Home() {
           </ResponsiveContainer>
         </div>
        {/* students chart */}
-        <div className="lg:w-1/2 mt-4 lg:mt-0 barchart">
+        <div className="lg:w-1/2 md:w-1">
           <h2>Students</h2>
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" minWidth={250} height={200}>
           <BarChart
             width={500}
             height={200}
@@ -143,6 +143,7 @@ export default function Home() {
             }}
           >
             <Legend />
+            <XAxis dataKey="name" />
             <ReferenceLine y={0} stroke="#000" />
             <Bar dataKey="ActiveStudents" fill="#455a64" />
             <Bar dataKey="DropOutStudents" fill="#787f82" />
@@ -185,7 +186,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+    {/* --- Schedule table --- */}
         <div className="overflow-hidden border rounded-lg mt-1 bg-gray-200">
           <div className="flex flex-col bg-gray-100">
             {filteredScheduleData.map((item, index) => (
@@ -216,7 +217,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      
       {/* Schedule */}
     </div>
   );

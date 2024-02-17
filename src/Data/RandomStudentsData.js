@@ -997,6 +997,7 @@ const RandomStudentsData = [{id:1,student_data:"Rick Siemens",course_enrolled:"A
 {id:997,student_data:"Talbot Mackie",course_enrolled:"Advanced Badminton",fee_received:3000},
 {id:998,student_data:"Barron Lammenga",course_enrolled:"Advanced Badminton",fee_received:5000},
 {id:999,student_data:"Ollie Oakinfold",course_enrolled:"Beginner Badminton",fee_received:5000},
+{id:1000,student_data:"Alic Kobisch",course_enrolled:"Advanced Badminton",fee_received:5000},
 {id:1000,student_data:"Alic Kobisch",course_enrolled:"Advanced Badminton",fee_received:5000}
 ];
 

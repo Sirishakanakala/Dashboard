@@ -166,10 +166,11 @@
     overflow: hidden;
   }
   .grid-container {
+    grid-template-rows: 60px 100vh;
   grid-template-areas:
       'header header'
       'main main'; /* Combine header and main on smaller screens */
-    height: auto;
+    height: 100vh;
   }
   .header-heading .p{
     font-display: none;
@@ -178,7 +179,7 @@
   .header-container .b{
     display: none;
   }
- 
+  
 }
 @media (min-width: 768px) {
   .main-cards {
